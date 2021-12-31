@@ -7,7 +7,6 @@
 #include <ranges>
 #include <string>
 #include <string_view>
-#include <vector>
 
 constexpr unsigned int seat_to_id(std::string_view seat)
 {
