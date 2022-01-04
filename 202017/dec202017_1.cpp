@@ -7,7 +7,6 @@
 #include <iostream>
 #include <string>
 #include <unordered_set>
-#include <vector>
 
 struct ArrayHash {
 	template<typename T, std::size_t size>
