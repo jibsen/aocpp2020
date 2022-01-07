@@ -2,6 +2,9 @@
 // Advent of Code 2020, day 18, part one
 //
 
+// Since we only have to handle binary operators, we will use the
+// shunting-yard algorithm.
+
 #include <format>
 #include <iostream>
 #include <numeric>
