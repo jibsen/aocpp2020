@@ -185,6 +185,10 @@ int main()
 		}
 	}
 
+	// We picked a start_id above, now place that tile at 0, 0 and
+	// find the relative position of the rest of the tiles by
+	// matching the edges to find neighbors
+
 	std::unordered_map<std::pair<int, int>, int, PairHash> map;
 	std::queue<std::tuple<int, int, int>> queue;
 
@@ -252,6 +256,7 @@ int main()
 		}
 	}
 
+	// Find the range of coordinates of the tiles
 	int x_min = std::numeric_limits<int>::max();
 	int y_min = std::numeric_limits<int>::max();
 	int x_max = std::numeric_limits<int>::min();
