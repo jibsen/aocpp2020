@@ -147,7 +147,7 @@ void rotate_to_match(Tile &tile, std::string_view target, auto get_edge)
 
 bool tag_sea_monster(std::vector<std::string> &image, int x, int y)
 {
-	constexpr std::array<std::string_view, 3> monster = {
+	static constexpr std::array<std::string_view, 3> monster = {
 		"                  # ",
 		"#    ##    ##    ###",
 		" #  #  #  #  #  #   "

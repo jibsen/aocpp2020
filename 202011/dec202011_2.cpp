@@ -25,7 +25,7 @@ auto read_map()
 
 std::size_t num_neighbors(const Map &map, int start_x, int start_y)
 {
-	constexpr std::array<std::pair<int, int>, 8> directions = {{
+	static constexpr std::array<std::pair<int, int>, 8> directions = {{
 		{-1, -1}, {-1, 0}, {-1, 1},
 		{0, -1}, {0, 1},
 		{1, -1}, {1, 0}, {1, 1}
